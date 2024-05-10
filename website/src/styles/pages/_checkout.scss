@@ -1,0 +1,281 @@
+.checkout {
+  margin-bottom: remCal(100);
+  .checkout-title {
+    @include typo($fsz: emCal(16, 20), $fw: 600);
+    margin-bottom: emCal(20, 30);
+  }
+  .checkbox-label {
+    display: block;
+    @include typo($fsz: emCal(16, 14), $lh: emCal(14, 24));
+    input {
+      margin-right: emCal(16, 15);
+    }
+  }
+  &__form {
+    @include mq(lg) {
+      margin-bottom: emCal(16, 70);
+    }
+    .input-validator {
+      margin-bottom: emCal(16, 30);
+      label {
+        @include typo($fsz: emCal(16, 14));
+        span {
+          color: setColor(red);
+        }
+        input {
+          margin-top: emCal(16, 15);
+        }
+      }
+      input {
+        @include input($height: emCal(14, 45));
+      }
+    }
+
+    &__contact {
+      margin-bottom: emCal(16, 45);
+      &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: emCal(16, 30);
+
+        .checkout-title {
+          margin-bottom: 0;
+          @include mq(md) {
+            margin-bottom: emCal(16, 15);
+          }
+        }
+        p {
+          @include typo($fsz: emCal(16, 15));
+          a {
+            @include link($color: setColor(red));
+            margin-left: emCal(15, 10);
+          }
+        }
+      }
+    }
+  }
+  &__total {
+    padding: emCal(16, 30);
+    background-color: #f7f5f4;
+    .btn {
+      padding-top: 0;
+      padding-bottom: 0;
+      height: emCal(14, 45);
+      line-height: enCal(14, 45);
+      width: 100%;
+    }
+    &__coupon {
+      margin-bottom: emCal(16, 20);
+      h5 {
+        @include typo($fsz: emCal(16, 15), $fw: 600);
+        margin-bottom: emCal(16, 25);
+      }
+      .input-validator {
+        margin-bottom: emCal(14, 15);
+        input {
+          @include input($height: emCal(14, 45));
+        }
+      }
+    }
+    &__price {
+      margin-bottom: emCal(16, 30);
+      h5 {
+        @include typo($fsz: emCal(16, 15), $fw: 600);
+        margin-bottom: emCal(16, 25);
+      }
+      table {
+        width: 100%;
+        margin-bottom: emCal(16, 30);
+        tr {
+          &:last-child {
+            td {
+              padding-bottom: 0;
+            }
+          }
+          td {
+            @include typo($fsz: emCal(16, 14), $lh: emCal(14, 24));
+            padding-bottom: emCal(14, 10);
+            span {
+              font-weight: 700;
+            }
+            &:last-child {
+              text-align: right;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      &__total-count {
+        padding: emCal(16, 30) 0;
+        border: 1px solid setShadeColor(light);
+        border-width: 1px 0;
+        margin-bottom: emCal(16, 30);
+        table {
+          margin-bottom: 0;
+          tr {
+            td {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      &__payment {
+        .checkbox-label {
+          &:first-child {
+            margin-bottom: emCal(16, 15);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Anjali css
+
+// .delivery_mode_radio_button input[type="radio"]::before {
+//   content: "";
+//   width: 0.65em;
+//   height: 0.65em;
+//   border-radius: 50%;
+//   transform: scale(0);
+//   transition: 120ms transform ease-in-out;
+//   box-shadow: inset 1em 1em var(--form-control-color);
+// }
+// .delivery_mode_radio_button input[type="radio"]:checked::before {
+//   transform: scale(1);
+// }
+
+.delivery_mode_radio_button {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  // -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  // background-color: var(--form-background);
+  background-color: white;
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  // color: currentColor;
+  color: rgb(0, 138, 23);
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+  background-color: rgb(0, 138, 23);
+}
+
+input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+
+.coupon_content_popup {
+  width: 500px;
+  padding: 0 30px 30px 30px;
+  @media (max-width: 500px) {
+      width: 100%;
+  }
+}
+
+// myorders css
+.myorder_items_details {
+  width: 100% !important;
+}
+.orders_table_heading {
+  padding: 16px 14px 13px 10px !important;
+}
+.orders_table_details {
+  padding-left: 20px !important;
+}
+.order_table_productname_img {
+  display: flex;
+  align-items: center;
+}
+.order_table_productname_img p {
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: 500;
+  padding-left: 5px;
+  line-height: 22px;
+}
+.order_total_table_bar {
+  width: 50%;
+}
+.myorder_items_details {
+  box-shadow: none !important;
+  background-color: #e9e9e959;
+  padding: 16px !important;
+}
+.myorder_items_details .fIrMOx {
+  border-bottom: 1px solid #dddddd70 !important;
+}
+.myorder_items_details .idVnoj {
+  background-color: #f1f1f170 !important;
+}
+.myorder_items_details .haEKSI {
+  padding-left: 20px !important;
+}
+.myorder_items_details .order_date {
+  font-size: 14px !important;
+}
+.myorder_items_details .order_date span {
+  color: setColor(red);
+}
+.myorder_items_details .hQJCTj {
+  padding-left: 20px !important;
+  padding-top: 10px !important;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.order_top_status_id_box{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.checkout__total__price table tr td span {
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+@media (max-width:452px) {
+  .order_top_status_id_box{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    
+  }
+  
+}

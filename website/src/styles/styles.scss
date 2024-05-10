@@ -1,0 +1,217 @@
+/* third party library styles */
+//  Boostrap
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/bootstrap-grid";
+//
+@import "~lightgallery.js/dist/css/lightgallery.css";
+@import "~react-calendar/dist/Calendar.css";
+@import "~slick-carousel/slick/slick.css";
+//@import "~slick-carousel/slick/slick-theme.css";
+@import "~react-tabs/style/react-tabs.css";
+@import "~react-toastify/dist/ReactToastify.css";
+@import "~react-image-lightbox/style.css";
+
+//SCSS
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+//CSS
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+/* project styles */
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/custom_container";
+@import "base/font_family";
+@import "base/reset";
+
+@import "components/accordion";
+@import "components/add_to_cart";
+@import "components/benefits";
+@import "components/breadcrumb";
+@import "components/blog_sidebar";
+@import "components/button";
+@import "components/call_to_action";
+@import "components/cart_siderbar";
+@import "components/loading";
+@import "components/modal";
+@import "components/doctor";
+@import "components/paginator";
+@import "components/pagination";
+@import "components/post_card";
+@import "components/post_content";
+@import "components/product";
+@import "components/quantity";
+@import "components/top_nav";
+@import "components/review";
+@import "components/sectionTitle";
+@import "components/select";
+@import "components/social_icons";
+@import "components/ui";
+@import "components/video_frame";
+
+@import "layouts/blog";
+@import "layouts/brands";
+@import "layouts/categories";
+@import "layouts/dale_of_week";
+@import "layouts/footer";
+@import "layouts/header";
+@import "layouts/instagram";
+@import "layouts/introduction";
+@import "layouts/menu";
+@import "layouts/product_thumb";
+@import "layouts/slider";
+@import "layouts/team";
+@import "layouts/testimonial";
+@import "layouts/product_detail";
+
+@import "pages/blog";
+@import "pages/blog_detail";
+@import "pages/cart";
+@import "pages/checkout";
+@import "pages/contact";
+@import "pages/error";
+@import "pages/product_detail";
+@import "pages/services";
+@import "pages/shop";
+@import "pages/wishlist";
+@import "pages/doctor";
+@import "pages/login";
+@import "pages/returnCancellation";
+@import "pages/profile";
+@import "pages/myprofile";
+@import "pages/terms.css";
+
+.quil_editor_page h1 {
+  line-height: 45px !important;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  border-radius: 10px !important;
+}
+
+// Filter Sidebar Start Shashiknat
+.phone_button {
+  display: none;
+  padding: 10px 10px;
+}
+.closeFilter {
+  display: none !important;
+}
+@media (max-width: 768px) {
+  .phone_button {
+    display: flex;
+  }
+  .phoneSideBar {
+    position: fixed;
+    top: 0px;
+    right: -200%;
+    background: #fff;
+    z-index: 999999999999999;
+    height: 100vh;
+    transition: 0.5s;
+    overflow-y: scroll;
+    padding: 0;
+
+    .shop-sidebar__content {
+      padding: 0 20px;
+    }
+  }
+  .phoneSideBar.active {
+    right: 0% !important;
+  }
+  .closeFilter {
+    border-bottom: 1px solid #0072ff21;
+    margin-bottom: 20px;
+    padding: 0px 0;
+    display: flex !important;
+    padding: 10px 0px;
+  }
+}
+
+// Filter Sidebar End
+
+// Whts chat
+
+.whatsapp {
+  position: fixed;
+  z-index: 9999999999999999999999;
+  // border: 1px solid red;
+  padding: 10px;
+  bottom: 25px;
+  left: 5px;
+  width: 70px;
+
+  img {
+    width: 100%;
+  }
+}
+
+
+// slider Arrow Here Start
+
+.slider {
+  position: relative;
+}
+
+.slider
+  .slider__carousel
+  .slick-slider.slick-initialized
+  .slick-arrow.slick-prev {
+  position: absolute;
+  top: 40%;
+  left: 30px;
+  z-index: 9999;
+  padding: 10px 12px;
+  border-radius: 50px;
+  font-size: 20px;
+  background: #0000007d;
+  cursor: pointer;
+
+  @media (max-width: 1024px) {
+    left: 5px
+  }
+
+  svg {
+    color: #fff;
+    font-size: 20px;
+  }
+}
+
+.slider
+  .slider__carousel
+  .slick-slider.slick-initialized
+  .slick-arrow.slick-next {
+  position: absolute;
+  top: 40%;
+  right: 30px;
+  z-index: 9999;
+  padding: 10px 12px;
+  border-radius: 50px;
+  font-size: 20px;
+  background: #0000007d;
+  cursor: pointer;
+
+  @media (max-width: 1024px) {
+    right: 5px
+  }
+
+  svg {
+    color: #fff;
+    font-size: 20px;
+  }
+}
+
+// slider Arrow Here End
+
+
+.css-uhb5lp{
+  margin: 18px !important;
+  width: 580px !important;
+}
+

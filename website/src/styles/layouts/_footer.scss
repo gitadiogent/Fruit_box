@@ -1,0 +1,393 @@
+.footer-one {
+  padding-top: remCal(0);
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: emCal(16, 40);
+    margin-bottom: emCal(16, 50);
+    border-bottom: 1px solid setShadeColor(light);
+    @include mq(md) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__logo {
+      a {
+        display: inline-block;
+        img {
+          @include imgCenter($width: 64px, $type: contains);
+        }
+      }
+      img {
+        margin-top: 20px;
+      }
+      @include mq(md) {
+        margin-bottom: emCal(14, 15);
+      }
+    }
+
+    &__newsletter {
+      display: flex;
+      align-items: center;
+      max-width: 500px;
+      span {
+        margin-right: emCal(16, 15);
+        flex: none;
+      }
+      .footer-one-newsletter {
+        .mc-form {
+          display: flex;
+          input {
+            @include input($height: emCal(13, 45), $pd: 0 emCal(13, 20));
+          }
+          button {
+            @extend .btn, .-dark;
+            padding: 0;
+            height: emCal(13, 45);
+            width: emCal(13, 45);
+            flex: none;
+          }
+        }
+      }
+      @include mq(md) {
+        margin-bottom: emCal(14, 20);
+        flex-direction: column;
+        width: 100%;
+        span {
+          margin-right: 0;
+          margin-bottom: emCal(14, 10);
+        }
+        .form {
+          width: 100%;
+          .input-validator {
+            flex-grow: 1;
+          }
+        }
+      }
+    }
+
+    &__social {
+      @include mq(lg) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: emCal(16, 30);
+        .social-icons {
+          width: 100%;
+        }
+      }
+      @include mq(md) {
+        margin-top: 0;
+      }
+    }
+  }
+  .footer-title {
+    @include typo($fsz: 1em, $fw: 600);
+    margin-bottom: emCal(38, 40);
+    @include mq(lg) {
+      margin-bottom: emCal(38, 20);
+    }
+  }
+  &__body {
+    padding-bottom: 30px;
+    .footer__section {
+      @include mq(lg) {
+        margin-bottom: emCal(16, 30);
+      }
+      &.-info {
+        p {
+          @include typo(
+            $fsz: emCal(16, 14),
+            $lh: emCal(14, 24),
+            $color: setShadeColor(medium)
+          );
+          span {
+            color: setShadeColor(dark);
+          }
+          margin-bottom: emCal(16, 10);
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      &.-links {
+        @include mq(md) {
+          margin-bottom: 0;
+          ul {
+            margin-bottom: emCal(16, 30);
+          }
+        }
+        ul {
+          list-style: none;
+          li {
+            a {
+              @include link(
+                $color: setShadeColor(medium),
+                $hvr-color: setShadeColor(dark),
+                $fsz: emCal(16, 14),
+                $lh: emCal(14, 34)
+              );
+              position: relative;
+              overflow: hidden;
+              display: inline-block;
+              &:hover {
+                &:after {
+                  left: 0;
+                }
+              }
+              &:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: -100%;
+                background-color: #04888d50;
+                height: emCal(15, 8);
+                width: 100%;
+                z-index: 0;
+                transition: $transition;
+              }
+            }
+          }
+        }
+      }
+      &.-payment {
+        p {
+          @include typo(
+            $fsz: emCal(16, 14),
+            $lh: emCal(14, 24),
+            $color: setShadeColor(medium)
+          );
+          margin-bottom: emCal(14, 30);
+        }
+        .payment-methods {
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+  &__footer {
+    background-color: #9191910f;
+    padding: 20px 0;
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      p {
+        @include typo($fsz: emCal(16, 14), $color: setShadeColor(medium));
+        @include mq(md) {
+          margin-bottom: emCal(14, 15);
+        }
+      }
+      ul {
+        list-style: none;
+        li {
+          display: inline-block;
+          a {
+            @include link($fsz: emCal(16, 14), $color: setShadeColor(medium));
+          }
+          &::after {
+            content: "|";
+            margin: 0 emCal(16, 10);
+          }
+          &:last-child {
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-two {
+  padding: emCal(16, 130) 0;
+  background: {
+    image: url("/assets/images/footer/footer-2-bg.png");
+    size: cover;
+    repeat: no-repeat;
+    position: bottom;
+  }
+  &__content {
+    text-align: center;
+    &__logo {
+      margin-bottom: emCal(16, 40);
+      display: block;
+      img {
+        @include imgCenter($width: emCal(16, 200), $type: contain);
+      }
+    }
+    &__description {
+      @include typo($fsz: emCal(16, 14), $lh: emCal(14, 24));
+      margin-bottom: emCal(14, 40);
+    }
+    .footer-two-newsletter {
+      margin-bottom: emCal(16, 40);
+      max-width: emCal(16, 450);
+      margin-left: auto;
+      margin-right: auto;
+      .mc-form {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        input {
+          @include input($width: auto, $height: emCal(13, 45));
+          flex-grow: 1;
+        }
+        button {
+          @extend .btn, .-red;
+          padding: 0 emCal(13, 20);
+          height: emCal(13, 45);
+        }
+        .input-validator {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.footer_logo_main{width: 12em;height: auto;}
+
+.footer-one {
+  background-color: #f1f1f18c;
+  margin-top: 50px;
+}
+.footer-one__header {
+  display: none;
+}
+.footer-one__body {
+  padding-top: 80px;
+}
+.footer_logo {
+  text-align: center;
+}
+.footer_menu_list ul li a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+.footer_menu_list ul li {
+  padding: 25px 15px 0px;
+}
+.footer_menu_list ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.footer_menu_list {
+  text-align: center;
+}
+.footer_social_icon {
+  text-align: center;
+  margin-top: 20px;
+}
+.footer_social_icon img {
+  margin: 0px 8px;
+  width: 25px;
+  height: 25px;
+}
+
+// download app cta css
+.download_app_section {
+  margin-top: 50px;
+}
+.download_app_content {
+  padding-right: 180px;
+}
+.download_app_content h5 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.download_app_content p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.Download_app_btn img {
+  width: 100%;
+  text-align: right;
+}
+.download_app_cta {
+  padding: 70px 70px;
+  border-radius: 60px;
+  align-items: end;
+  box-shadow: 0 0 16px -5px hsla(0, 0%, 54.1%, 0.76);
+  -webkit-box-shadow: 0 0 66px -20px hsl(0deg 0% 69.4% / 44%);
+}
+
+@media (max-width: 426px) {
+  .download_app_cta {
+    padding: 40px 20px;
+    border-radius: 20px;
+  }
+}
+
+.footer-one p {
+  @include typo(
+    $fsz: emCal(16, 14),
+    $lh: emCal(14, 24),
+    $color: setShadeColor(medium)
+  );
+  // margin-bottom: emCal(14, 30);
+}
+
+.footer__section.socalIcons img {
+  width: 24px;
+}
+.footer__section.socalIcons a {
+  text-decoration: none;
+  gap: 10px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.Download_app_btn_ a.socalImg {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 5px !important;
+}
+.Download_app_btn_ img {
+  width: 100% !important;
+}
+.Download_app_btn_ {
+  width: 50%;
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+
+@media (max-width: 555px) {
+  .Download_app_btn {
+    margin-top: 20px;
+  }
+  .footer-one__body .footer__section.-links{
+    margin-top: 20px;
+  }
+  .footer-one__body .footer__section .main.d-flex{
+    flex-direction: column;
+  }
+  .footer-one__body {
+    padding-bottom: 0px;
+    padding-top: 40px !important;
+  }
+  .footer__section.-payment.socalIcons .footer-title{
+    margin-bottom: 18px;
+  }
+  .footer-one p{
+    margin-bottom: 0 !important;
+  }
+  .download_app_content h5{
+    line-height: 43px !important;
+  }
+
+  .righttnav{
+    padding-left: 0 !important;
+  }
+}

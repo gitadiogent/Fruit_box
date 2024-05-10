@@ -1,0 +1,8 @@
+[
+  { "title": "Home", "to": "/" },
+  { "title": "Shop", "to": "/shop/products" },
+  { "title": "About", "to": "/about" },
+  { "title": "Contact", "to": "/contact" },
+  { "title": "Terms & Conditions", "to": "/term-and-condition" },
+  { "title": "Privacy Policy", "to": "/privacy-policy" }
+]
