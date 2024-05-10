@@ -1,5 +1,5 @@
+export const baseUrl = "https://fruit-box-pied.vercel.app";
 // export const baseUrl = "http://localhost:5000";
-export const baseUrl = "https://muni-kart-backend.vercel.app";
 export const web_title = "Fruit Box";
 
 export const primaryColor = "#378c11";
