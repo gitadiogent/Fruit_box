@@ -1,0 +1,17 @@
+
+
+  .about_us, .terms_and_conditions, .privacy_policy{
+   margin-bottom: 30px;
+   margin-top: 15px;
+   line-height: 30px;
+
+  }
+
+  @media (max-width: 600px) {
+    .phone_number,
+    .app_link
+     {
+      height: auto; 
+      margin-bottom: 15px; 
+    }
+  }

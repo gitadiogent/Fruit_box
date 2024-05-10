@@ -1,0 +1,219 @@
+.product-detail {
+  // margin-bottom: emCal(16, 100);
+  margin-bottom: 60px;
+  &__wrapper {
+    // padding-bottom: emCal(16, 100);
+    padding-bottom: 60px;
+    border-bottom: 1px solid setShadeColor(light);
+    .product-detail__slide-two {
+      @include mq(md) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.flex-btn-product-detail {
+  margin-top: 20px;
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+  gap: 20px;
+
+  // @include mq(sm) {
+  //  flex-direction: column;
+  //  font-size: small;
+  //}
+
+  @include mq(md) {
+    // flex-direction: column;
+    font-size: small;
+  }
+}
+
+// @include mq(md) {
+//   flex-direction: column;
+// }
+
+// custom css anjali
+// inquiry form css
+
+.enquiry_form_box .enquiry_form_text_box label {
+  font-size: 15px;
+  line-height: 1.8;
+}
+.enquiry_form_box .enquiry_form_text_box input {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #61616133 !important;
+}
+.enquiry_form_box .enquiry_form_text_box textarea {
+  padding: 15px;
+  border: 1px solid #61616133 !important;
+  outline: none;
+}
+.enquiry_form_box {
+  padding: 40px;
+}
+.enquiry_form_box .enquiry_form_heading {
+  padding: 20px;
+}
+.enquiry_form_box .enquiry_form_submit_button {
+  background-color: #04888d;
+}
+
+// PRODUCT VARIANTS CSS
+.main_variant_div {
+  display: flex;
+  align-items: center;
+  padding-bottom: 14px;
+}
+
+.variant_list_color {
+  display: flex;
+  gap: 7px;
+  padding-left: 10px;
+}
+
+.variant_list {
+  display: flex;
+  gap: 7px;
+  padding-left: 10px;
+}
+.variant_list_inner {
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 5px;
+  padding: 10px 16px;
+}
+// .selected_variant_list p {border: 1px solid #111111;border-radius: 5px;padding: 10px 16px;}
+.selected_variant_list_inner {
+  border: 1px solid #111111;
+  border-radius: 5px;
+  padding: 10px 16px;
+}
+
+.variant_color_style {
+  border: 1px solid rgb(209, 209, 209);
+  padding: 2px;
+  border-radius: 50%;
+}
+.variant_color_style_inner {
+  padding: 12px;
+  border-radius: 50%;
+}
+
+// .selected_variant_color_style {border:1px solid #111111;padding:2px;border-radius:50%}
+
+// PRODUCT VARIANTS CSS
+
+@media only screen and (max-width: 425px) {
+  .product-detail__content__header h2 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .product-detail__content .divider {
+    margin: 20px 0;
+  }
+  .product-detail__content__footer .product-detail__colors {
+    margin: 0;
+  }
+  .product-detail__content__footer ul {
+    margin-bottom: 15px;
+  }
+  .flex-btn-product-detail {
+    margin-top: 15px;
+  }
+  .enquiry_form_box {
+    padding: 25px !important;
+    top: 49% !important;
+    width: 94% !important;
+  }
+}
+
+.main_slider .image-gallery-thumbnail .image-gallery-thumbnail-image {
+  height: 90px !important;
+  object-fit: cover;
+}
+.main_slider .image-gallery-thumbnail.active,
+.image-gallery-thumbnail:hover {
+  border: 1px solid rgba(0, 0, 0, 0.54);
+}
+.main_slider .image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  border: 1px solid rgba(0, 0, 0, 0.54);
+}
+.main_slider .image-gallery-thumbnails-wrapper.thumbnails-swipe-horizontal {
+  margin-top: 20px !important;
+}
+
+.rightNavDetailPage {
+  position: absolute;
+  right: 0;
+  top: 45%;
+  z-index: 99999;
+}
+.leftNavDetailPage {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  z-index: 99999;
+}
+
+@media (max-width: 555px) {
+  .Review_mainRow {
+    padding: 0 !important;
+  }
+  .maindetails {
+    padding: 20px !important;
+  }
+
+  .righttnav {
+    width: 100% !important;
+  }
+
+  .righttnav.profile .stesps .step {
+    font-size: 14px !important;
+    line-height: 22px;
+  }
+  .mainContainer.container .righttnav h3.heading {
+    font-size: 24px !important;
+  }
+
+  .righttnav.profile.refer .heading {
+    font-size: 16px !important;
+  }
+  .righttnav.profile.refer .area.referMain input {
+    margin: 0px 0 10px 0 !important;
+  }
+
+  .ratingcard,
+  .popupCardReview {
+    width: 100% !important;
+    padding: 15px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .popup_allReviews.heading {
+    padding: 30px 30px 10px 15px !important;
+  }
+
+  .css-1t1j96h-MuiPaper-root-MuiDialog-paper .leftright_start {
+    // flex-direction: column;
+    // align-items: start;
+    // gap: 5px;
+  }
+  .css-1ash5ol-MuiModal-root-MuiDialog-root .MuiDialogContent-root {
+    padding: 0px !important;
+  }
+  .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    margin: 10px !important;
+    width: 100% !important;
+  }
+  .css-178sweg-MuiButtonBase-root-MuiIconButton-root {
+    right: 7px !important;
+  }
+
+  .product_inner{
+    display: none !important;
+  }
+}
