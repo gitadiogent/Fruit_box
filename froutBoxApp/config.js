@@ -11,5 +11,6 @@ export const config = {
   // BACKEND_URI: 'https://shark-app-9k4av.ondigitalocean.app', //' http://192.168.43.147:5000' https://upsellz-backend.onrender.com 'https://octopus-app-i5b23.ondigitalocean.app' ,
   WEBSITE_URL: 'https://fruit-box-ya9l.vercel.app', //' http://192.168.43.147:5000' https://upsellz-backend.onrender.com 'https://octopus-app-i5b23.ondigitalocean.app' ,
   // BACKEND_URI: 'http://172.16.2.121:5000', //' http://192.168.43.147:5000' https://upsellz-backend.onrender.com 'https://octopus-app-i5b23.ondigitalocean.app' ,
-  BACKEND_URI: 'https://fruit-box-pied.vercel.app', //' http://192.168.43.147:5000' https://upsellz-backend.onrender.com 'https://octopus-app-i5b23.ondigitalocean.app' ,
+  // BACKEND_URI: 'https://fruit-box-pied.vercel.app', //' http://192.168.43.147:5000' https://upsellz-backend.onrender.com 'https://octopus-app-i5b23.ondigitalocean.app' ,
+  BACKEND_URI: 'https://squid-app-udvj3.ondigitalocean.app', //' http://192.168.43.147:5000' https://upsellz-backend.onrender.com 'https://octopus-app-i5b23.ondigitalocean.app' ,
 };
