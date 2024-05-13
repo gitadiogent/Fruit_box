@@ -84,7 +84,7 @@ const sendOrderNotificationMail = async (
     Customer Address - ${customer_address} <br/> <br/>
     <b>Buys ${product_count} Products of Total ${order_total} <b> <br/> <br/>
     We're always happy to help you :)<br/>
-    <b>Team Adiogent</b></p>
+    <b>Frout Box</b></p>
         </div> 
         </body>
         </html>`,
@@ -155,7 +155,7 @@ const sendContactEnquery = async (
       Message - ${message} <br/> <br/>
       <br/>
       <br/>
-      <b>Team Adiogent</b></p>
+      <b>Frout Box</b></p>
           </div> 
           </body>
           </html>`,
@@ -217,7 +217,7 @@ const sendOurNotificationMail = async (appId, phoneNumber) => {
         AppID - ${appId} , <br/>
         Phone Number - ${phoneNumber}</b><br/> <br/>
     We're always happy to help you :)<br/>
-    <b>Team Adiogent</b></p>
+    <b>Frout Box</b></p>
         </div> 
         </body>
         </html>`,
@@ -295,7 +295,7 @@ const sendAppSubmitMail = async (
         Let us know if you stumble in between and get in touch with us at support@adiogent.in <br/> <br/>
         
         We're always happy to help you :)<br/>
-       <b>Team Adiogent</b></p>
+       <b>Frout Box</b></p>
         </div> 
         </body>
         </html>`,
@@ -357,7 +357,7 @@ const sendAppSubmitMail = async (
     App Template - ${app_template} <br/> 
     Address - ${address} <br/> <br/>
     We're always happy to help you :)<br/>
-    <b>Team Adiogent</b></p>
+    <b>Frout Box</b></p>
         </div> 
         </body>
         </html>
@@ -434,7 +434,7 @@ const sendAppPublishMail = async (
         Let us know if you stumble in between and get in touch with us at support@adiogent.in <br/> <br/>
         
         We're always happy to help you :)<br/>
-       <b>Team Adiogent</b></p>
+       <b>Frout Box</b></p>
         </div> 
         </body>
         </html>
@@ -496,7 +496,7 @@ const sendAppPublishMail = async (
     Date & Time - ${dateAndTime} <br/> 
     App Publish Type - ${app_publish_type} <br/> <br/>
     We're always happy to help you :)<br/>
-    <b>Team Adiogent</b></p>
+    <b>Frout Box</b></p>
         </div> 
         </body>
         </html>
@@ -561,7 +561,7 @@ const sendgetMoreServiceMail = async (app_id, phoneNumber, service_name) => {
     Phone Number - ${phoneNumber} <br/> 
     Service Name - ${service_name} <br/> <br/>
     We're always happy to help you :)<br/>
-    <b>Team Adiogent</b></p>
+    <b>Frout Box</b></p>
         </div> 
         </body>
         </html>
@@ -636,7 +636,7 @@ const sendBulkEnquery = async (
       Message - ${message} <br/> <br/>
       <br/>
       <br/>
-      <b>Team Adiogent</b></p>
+      <b>Frout Box</b></p>
           </div> 
           </body>
           </html>`,
