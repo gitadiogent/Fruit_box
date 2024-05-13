@@ -1,5 +1,6 @@
-export const baseUrl = "https://fruit-box-pied.vercel.app";
+// export const baseUrl = "https://fruit-box-pied.vercel.app";
 // export const baseUrl = "http://localhost:5000";
+export const baseUrl = "https://squid-app-udvj3.ondigitalocean.app";
 export const web_title = "Fruit Box";
 
 export const primaryColor = "#378c11";
