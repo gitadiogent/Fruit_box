@@ -17,7 +17,7 @@ module.exports = {
   AUTH_EMAIL: "salesfruitbox@gmail.com",
 
   // AUTH_Password:"srbsabbaredaqhfa",
-  AUTH_Password: "mtix rqxk uexi xtml",
+  AUTH_Password: "ummi qrmw ozzi pgal",
 
   MSG_TEMPLATE_ID: "64a295e2d6fc05023b40ebb3", //===== MSG 91  ====
 
