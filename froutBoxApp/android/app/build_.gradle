@@ -79,9 +79,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.adiogent_app"
+    namespace "com.fruit_box"
     defaultConfig {
-        applicationId "com.adiogent_app"
+        applicationId "com.fruit_box"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

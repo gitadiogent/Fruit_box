@@ -1,4 +1,4 @@
-package com.adiogent_app
+package com.fruit_box
 
 import android.app.Application
 import com.facebook.react.PackageList
