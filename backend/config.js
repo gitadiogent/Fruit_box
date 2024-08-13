@@ -2,7 +2,7 @@ module.exports = {
   MONGODB_URI:
     "mongodb+srv://salesfruitbox:6monVIz9Spv7IVDi@cluster0.kkffqez.mongodb.net/frout_box",
 
-  PORT: 5000,
+  PORT: process.env.PORT || 5000,
 
   JWT_TOKEN_SECRET:
     "iugeufbuebasufhnksandkjwqndknwndassanjeevamayankiuq38nofoh8qhfxuiqlnafiuheu3hfqaxgfxjkasbdkjsabdjkbasiuxinuawdxiuqwuweiurwejndsbkjiugasffajsbaksjdbjsakbdjkasbdxjabs",
